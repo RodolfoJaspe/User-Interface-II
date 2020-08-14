@@ -1,1 +1,279 @@
 /* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html {
+  background: url(https://www.rvinyl.com/Shared/Images/Product/Rwraps-reg-3D-Carbon-Fiber-Vinyl-Film-Wrap-Black/Black-R3-Carbon-Fiber-Vinyl-Film-Wrap.jpg);
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  line-height: 1;
+  font-family: futura;
+  font-size: 62.5%;
+  color: black;
+  background-color: white;
+  width: 80%;
+  border-left: 1rem solid red;
+  border-right: 1rem solid red;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+p {
+  font-size: 1.4rem;
+  color: black;
+}
+
+h1 {
+  font-family: Orbitron;
+  color: black;
+  font-size: 5rem;
+  margin: 0;
+}
+
+h2 {
+  font-family: Orbitron;
+  color: black;
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+  margin: 0.2rem;
+}
+
+.headercontainer {
+  margin: 3rem;
+}
+
+.navbar a {
+  font-size: 1.5rem;
+  background-color: white;
+  box-shadow: 0.5rem 0.5rem 0.5rem gray;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: black;
+  border-radius: 1rem;
+  border: 0.1rem solid red;
+  margin: 1rem;
+  width: 5rem;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.navbar a:hover {
+  background: url(https://www.rvinyl.com/Shared/Images/Product/Rwraps-reg-3D-Carbon-Fiber-Vinyl-Film-Wrap-Black/Black-R3-Carbon-Fiber-Vinyl-Film-Wrap.jpg);
+  border: 0.1rem solid red;
+  color: white;
+}
+.maincontainer1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.descriptioncontainer {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  line-height: 2rem;
+  margin: 1rem;
+}
+
+.maincontainer1 img {
+  margin: 1rem;
+  width: 50rem;
+}
+button {
+  width: 12rem;
+  margin: 2rem 0;
+  font-family: futura;
+  font-size: 1.5rem;
+  background-color: white;
+  box-shadow: 0.5rem 0.5rem 0.5rem gray;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: black;
+  border-radius: 1rem;
+  border: 0.1rem solid red;
+}
+
+button:hover {
+  background: url(https://www.rvinyl.com/Shared/Images/Product/Rwraps-reg-3D-Carbon-Fiber-Vinyl-Film-Wrap-Black/Black-R3-Carbon-Fiber-Vinyl-Film-Wrap.jpg);
+  border: 0.1rem solid red;
+  color: white;
+}
+
+.maincontainer2 {
+  display: flex;
+  justify-content: center;
+  margin: 5rem;
+}
+
+.maincontainer2 img {
+  margin: 1rem;
+}
+
+.projectsrow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.projects {
+  font-family: Orbitron;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 1rem 1rem 2rem gray;
+  border-radius: 2rem;
+  background-color: white;
+  margin: 1rem;
+}
+
+.footercontact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footercontainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sociallogo {
+  width: 5rem;
+}
