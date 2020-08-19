@@ -238,7 +238,8 @@ button:hover {
 
 .maincontainer2 {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
   margin: 5rem;
 }
 
