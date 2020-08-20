@@ -252,47 +252,91 @@ button:hover {
 .maincontainer2 {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
   margin: 5rem;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   margin: 0 auto;
-  /* background: yellow; */
+  padding-top: 2rem;
 }
 
+.projectsrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 .maincontainer2 img {
   margin: 1rem;
+  object-fit: contain;
 }
 
 .projects {
-  font-family: Orbitron, optima;
+  font-family: Orbitron, optima, verdana;
   display: flex;
   flex-direction: column;
   text-align: center;
   box-shadow: 1rem 1rem 2rem gray;
   border-radius: 2rem;
   background-color: white;
-  margin: 0.5rem;
+  margin: 2rem;
 }
 
 .footercontainer {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  margin-top: 10%;
+  align-items: center;
+  margin-top: 5%;
+  padding-top: 2%;
+  background: #e4edf0;
 }
 
-.footercontact {
+/* .footercontact {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 
 .sociallogo {
   width: 5rem;
 }
 
+/* widescreen */
+@media (max-width: 1920px) {
+  body {
+    /* background: lightblue; */
+  }
+  .projects {
+    margin: 1rem;
+  }
+}
+
+/* laptop */
+@media (max-width: 1366px) {
+  body {
+    /* background: #d6ffda; */
+    width: 90%;
+  }
+  .projects {
+    width: 15rem;
+    height: 15rem;
+    margin: 2rem 0.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .maincontainer2 {
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+  .projectsrow {
+    flex-direction: column;
+  }
+}
 @media (max-width: 800px) {
   body {
-    background: lightyellow;
+    /* background: lightyellow; */
+    border: 0.7rem solid #5c0000;
   }
 
   h1 {
@@ -308,7 +352,7 @@ button:hover {
   .projects {
     width: 11rem;
     height: 11rem;
-    margin: 2rem;
+    margin: 2rem 0.5rem;
   }
   .maincontainer2 {
     display: flex;
@@ -318,21 +362,42 @@ button:hover {
 
 @media (max-width: 500px) {
   body {
-    background: pink;
+    /* background: pink; */
+    border: 0.5rem solid #5c0000;
   }
   h1 {
-    font-size: 3rem;
+    font-size: 2.7rem;
+  }
+  h2 {
+    font-size: 2rem;
   }
   .navbar {
     flex-direction: column;
     align-items: center;
   }
   .projects {
-    width: 8rem;
-    height: 8rem;
-    margin: 1rem;
+    width: 9rem;
+    height: 9rem;
+    margin: 1rem 0.5rem;
   }
   .sociallogo {
     width: 4.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  body {
+    /* background-color: lightsalmon; */
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .projects {
+    width: 7rem;
+    height: 7rem;
+    margin: 1rem 0.5rem;
   }
 }
